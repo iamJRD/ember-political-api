@@ -1,0 +1,11 @@
+{{log model}}
+{{#each model.member as |member|}}
+<h2>{{member.first_name}} {{member.last_name}}</h2>
+<h3>{{member.state}}-{{member.party}}</h3>
+{{/each}}
+<h2>This legislator's committees:</h2>
+<ul>
+  {{#each model.committees as |committee|}}
+    <li>{{committee.name}}</li>
+  {{/each}}
+</ul>

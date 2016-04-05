@@ -4,7 +4,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model(urlParams) {
     var key = config.myApiKey;
-    var url = 'http://congress.api.sunlightfoundation.com/legislators?order=last_name__asc' + urlParams.query + '&apikey=' + key + '&per_page=50';
+    var url = 'http://congress.api.sunlightfoundation.com/legislators?' + urlParams.query + '&apikey=' + key + '&per_page=50';
     return Ember.$.getJSON(url).then(function(responseJSON) {
       return responseJSON.results;
     });
