@@ -1,0 +1,10 @@
+{{log committee}}
+<h1>{{committee.name}}</h1>
+
+<h3>{{committee.name}}'s subcommittees:</h3>
+
+{{#each committee as |subcommittee|}}
+  {{#if subcommittee.subcommittie}}
+    <li>{{committee.name}}</li>
+  {{/if}}
+{{/each}}

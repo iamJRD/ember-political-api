@@ -5,6 +5,9 @@
 {{/each}}
 <ul>
   {{#each model.committees as |committee|}}
-    <li>{{committee.name}}</li>
+    {{#if committee.subcommittee}}
+    {{else}}
+      <li>{{#link-to 'committee' committee.committee_id}}{{committee.name}}{{/link-to}}</li>
+    {{/if}}
   {{/each}}
 </ul>
