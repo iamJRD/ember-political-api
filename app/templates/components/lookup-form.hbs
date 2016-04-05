@@ -2,7 +2,7 @@
 <form>
   <div class="form-group">
     <select {{action 'selectState' on='change'}}>
-      <option value="null" selected>--- Pick a State ---</option>
+      <option >--- Pick a State ---</option>
       <option value="AL">AL</option>
       <option value="AK">AK</option>
       <option value="AZ">AZ</option>
@@ -66,5 +66,5 @@
     </select>
   </div>
 
-  <button class="btn btn-primary" {{action 'zipLookup'}}>Submit</button>
+  <button class="btn btn-primary" {{action 'legislatorFilter'}}>Submit</button>
 </form>

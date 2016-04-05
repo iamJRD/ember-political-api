@@ -12,12 +12,12 @@ export default Ember.Component.extend({
       this.set('party', event.target.value);
     },
 
-    zipLookup() {
+    legislatorFilter() {
       var params = {
         state: this.get('state'),
         party: this.get('party')
       };
-      this.sendAction('zipLookup', params);
+      this.sendAction('legislatorFilter', params);
     }
   }
 });
