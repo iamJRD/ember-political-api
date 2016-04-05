@@ -2,8 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-    legislatorFilter (params) {
-      // debugger;
+    legislatorFilter(params) {
       var urlParams;
       if((params.party !== null) && (params.state === null)) {
         urlParams = "party=" + params.party;

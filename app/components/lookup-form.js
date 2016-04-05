@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   state: null,
   party: null,
+  page: 1,
 
   actions: {
     selectState() {
